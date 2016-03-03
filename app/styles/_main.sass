@@ -1,0 +1,297 @@
+
+/////////////////////////////
+// Общие стили
+html 
+  font-size: 62.5%
+
+body
+  font-size: 1.6rem
+  font-family: 'OpenSans', sans-serif
+  color: #333
+
+section
+  padding: 20px 0
+  overflow: hidden
+
+p
+  margin: 0
+
+.title
+  color: #133981
+  font-size: 35px
+  font-weight: bold
+  text-align: center
+  margin: 1em 0
+
+.item_title
+    color: #1b1b1b
+    font-size: 16px
+    font-weight: bold
+    margin: 30px 0 23px
+
+.description
+  font-size: 14px
+
+a, a:link, a:active, a:focus, a:visited, a:hover, input, textarea, .slick-slide
+  outline: none 
+
+/////////////////////////////
+// Основные стили
+header
+  height: 148px
+  .line
+    width: 33.33333%
+    height: 4px
+    float: left
+  .line_1
+    background-color: #15b799
+  .line_2
+    background-color: #0081ad
+  .line_3
+    background-color: #133981
+
+  .logo
+    margin-top: 29px
+
+  .slogan
+    font-size: 20px
+    margin-top: 38px
+    line-height: 1.7
+    letter-spacing: 0.01em
+    strong
+      color: #0082AD
+      font-weight: 500
+
+  .contacts
+    float: right
+    letter-spacing: 0.02em
+    margin-top: 30px
+    .tel
+      font-size: 28px
+      padding-left: 33px
+      color: #15b799
+      background: url('../images/icon-phone.png') 0 50% no-repeat
+      font-weight: 100
+      strong
+        font-weight: 400
+
+    .email
+      padding-left: 33px
+      font-size: 14px
+      margin-top: 12px
+      background: url('../images/icon-mail.png') 0 50% no-repeat
+      text-decoration: underline
+
+
+
+nav
+  background-color: #ececec
+  font-size: 15px
+  font-weight: 500
+  ul
+    padding: 0
+    margin: 0
+    list-style: none
+    text-align: center
+    text-transform: uppercase
+  .menu>li
+    float: left
+  .menu li
+    line-height: 50px
+    transition: 0.3s
+    &:hover
+      background-color: #007aa3
+      color: #fff
+      cursor: pointer
+      .submenu
+        visibility: visible
+        opacity: 1
+  
+  .submenu
+    z-index: 1000
+    position: absolute
+    left: 0
+    background-color: #0082ad
+    color: #fff
+    text-transform: none
+    float: clear
+    text-align: left
+    width: 100%
+    font-weight: 400
+    visibility: hidden
+    box-shadow: 3px 7px 15px rgba(0, 0, 0, 0.3)
+    opacity: 0
+    transition: 0.3s
+  .submenu li
+    padding: 15px 25px
+    border-top: 1px solid transparent
+    border-bottom: 1px solid transparent
+    line-height: 1.7
+    &:nth-child(n+2)
+      border-top: 1px solid #1a88ac
+      border-bottom: 1px solid #1a88ac
+
+
+
+.slider
+  height: 452px
+  background: url("../images/bleek.png"), url("../images/pattern_bg.jpg")
+  background-position: 50%
+  background-repeat: no-repeat, repeat 
+  position: relative
+  padding: 0
+  cursor: grab
+  
+  .slide_1
+    // background: url("../images/bleek.png")
+    .container
+      height: 452px
+      padding: 0 30px
+      position: relative
+    .image
+      background: url("../images/man.png") 110% 99% no-repeat
+      width: 700px
+      height: 450px
+      position: absolute
+      right: -45px
+      bottom: 0
+
+  .title
+    text-align: left
+    color: #fff
+    font-size: 32px
+    font-weight: bold
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2)
+    line-height: 1.4
+    margin: 2.1em 0 0
+    letter-spacing: 0.12em
+
+  .description
+    color: #fff
+    margin-top: 1.2em
+    line-height: 1.6
+    font-size: 18px
+
+  .button
+    width: 254px
+    border-radius: 2px
+    background-color: #ebebeb
+    box-shadow: 0 2px 2px rgba(224,97,97,.5), inset 0 2px 0 #fff
+    background-image: linear-gradient(to top, rgba(215,215,215,.5) 0%, rgba(255,255,255,.5) 100%)
+    line-height: 52px
+    text-align: center
+    text-transform: uppercase
+    font-weight: bold
+    margin-top: 35px
+    cursor: pointer
+    &:hover
+      background-color: #ccc
+  
+  .more
+    color: #fff
+    display: block
+    font-size: 14px
+    font-weight: 100
+    margin-top: 25px
+    text-decoration: underline
+
+  .navs
+    position: absolute
+    height: 452px
+    bottom: 0
+    left: 0
+    right: 0
+    margin: auto
+    .slick-dots
+      text-align: left
+      bottom: 7px
+      padding-left: 10px
+      z-index: 1000
+      li
+        margin: 0 3px
+        button:before
+          content: ''
+          background: url('../images/dot_empty.png') 50% no-repeat
+          opacity: 0.8
+      
+      li.slick-active
+        button:before
+          content: ''
+          background: url('../images/dot_full.png') 50% no-repeat
+
+    .slick-arrow
+      width: 18px
+      height: 81px
+      z-index: 1000
+  
+    .slick-prev:before
+      content: ''
+      opacity: 0.8
+      width: 18px
+      height: 81px
+      display: block
+      background: url('../images/prev.png') 50% no-repeat
+
+    .slick-next:before
+      content: ''
+      opacity: 0.8
+      width: 18px
+      height: 81px
+      display: block
+      background: url('../images/next.png') 50% no-repeat
+
+
+
+.features
+  text-align: center
+  height: 490px
+  .image
+    height: 120px
+    margin-top: 9px
+  [class*="col-"]:nth-of-type(1)
+    .image
+      background: url("../images/dollar.png") 50% no-repeat
+  [class*="col-"]:nth-of-type(2)
+    .image
+      background: url("../images/clock.png") 50% no-repeat
+  [class*="col-"]:nth-of-type(3)
+    .image
+      background: url("../images/display.png") 50% no-repeat
+
+
+
+.conditions
+  background: url("../images/conditions_bg.jpg") 50% no-repeat
+  text-align: center
+  height: 450px
+  .image
+    height: 125px
+    margin-top: 15px
+  [class*="col-"]:nth-of-type(1)
+    .image
+      background: url("../images/calendar.png") 50% no-repeat
+  [class*="col-"]:nth-of-type(2)
+    .image
+      background: url("../images/clock_backward.png") 50% no-repeat
+  [class*="col-"]:nth-of-type(3)
+    .image
+      background: url("../images/money.png") 50% no-repeat
+
+  .title
+    color: #fff
+
+  .item_title
+    text-transform: uppercase
+    color: #fff
+    font-size: 20px
+    font-weight: 400
+    line-height: 1.3
+
+  .description
+    font-weight: bold
+    color: #fff
+    font-size: 16px
+    position: absolute
+    top: 235px
+    left: 0px
+    width: 100%

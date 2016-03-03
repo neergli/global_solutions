@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".carousel").slick({dots:!0,appendArrows:$(".navs.container"),appendDots:$(".navs.container")})});
